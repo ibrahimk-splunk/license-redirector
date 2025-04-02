@@ -20,6 +20,11 @@ Enhances security by reducing the need for multiple users to access the License 
 
 Automates the process of license information retrieval.
 
+**USAGE**
+
+There are two apps in here:
+1. License redirector app which needs to be installed on the License Master
+2. License-Slave app which needs to be installed on the Slave machine where you want to see the license information 
 **Installation**
 
 Download the app from the GitHub repository.
