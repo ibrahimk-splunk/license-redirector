@@ -1,0 +1,5 @@
+<nav search_view="search" color="#65A637">
+  <view name="license_usage_today" default='true' />
+  <view name="license_usage__previous_30_days" />
+  <view name="dashboards" />
+</nav>

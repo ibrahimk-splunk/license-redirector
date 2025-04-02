@@ -1,0 +1,58 @@
+###############License Usage Monitoring on Client Machine#############
+author = Ibrahim K
+Purpose = This app displays the license usage for the slave on the slave indexer.
+version = 1.0
+
+DESCRIPTION
+############
+Splunk License master distributes the licenses across the license slaves. All the license related 
+will be communicated to the License master for monitoring purposes. License Master manages all the 
+license information and no license related information is stored on the license slave. License usage report 
+will be communicated to the license owners.
+
+FILE & Directories
+##################
+license-usage-slave
+    │   README
+    │
+    └───default
+        │   app.conf
+        │   macros.conf
+        │   savedsearches.conf
+        │   ui-prefs.conf
+        │
+        └───data
+            └───ui
+                ├───nav
+                │       default.xml
+                │
+                └───views
+                        license_usage_today.xml
+                        license_usage__previous_30_days.xml
+                        README
+
+
+PREREQUISITES
+#############
+Install the license redirector app on the License Master Server to redirect the license information back to slave
+
+INSTALLATION AND CONFIGURATION
+##############################
+
+1. Go to the Apps in the Splunk home -> Manage Apps -> Install App from file
+2. Select the installable file and click upload
+3. The app "License-usage-slave" will be created
+
+
+ISSUES
+######
+There can be a small variation in the usage details from License Master, since the these dashboards are build with the redirected data(time lapse)
+If the redirected data is not received on the slave, these dashboards will be blank.
+
+
+CONTACTS
+#########
+
+For further information and issues please contact the Splunk License Service Team
+DL SAP Global Splunk License Service (External) <DL_59035AEF5F99B7869E000036@exchange.sap.corp>
+
